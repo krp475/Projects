@@ -1,0 +1,178 @@
+body {
+  background: #bdbdbd;
+  font-family: 'MS Sans Serif', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.win95-window {
+  width: 820px;
+  margin: 20px auto;
+  background: #c0c0c0;
+  border: 2px solid #444;
+  box-shadow: 2px 2px 0 #fff, -2px -2px 0 #444;
+  position: relative;
+}
+
+.win95-titlebar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #1919aa 0%, #3386d1 100%);
+  color: #fff;
+  padding: 4px 0 4px 8px;
+  border-bottom: 2px solid #888;
+}
+
+.win95-title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.win95-window-controls {
+  display: flex;
+  gap: 2px;
+  margin-right: 8px;
+}
+.win95-btn {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #222;
+  background: #e0e0e0;
+  box-shadow: 1px 1px 0 #fff, -1px -1px 0 #222;
+  margin-left: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.win95-btn-min {}
+.win95-btn-max {}
+.win95-btn-close {
+  background: #ff0a0a;
+}
+
+.win95-menubar {
+  display: flex;
+  gap: 18px;
+  background: #e0e0e0;
+  border-bottom: 2px solid #b0b0b0;
+  padding: 2px 8px;
+  font-size: 0.98em;
+  color: #222;
+}
+
+.win95-main {
+  display: flex;
+  background: #c0c0c0;
+  height: 480px;
+}
+
+.win95-sidebar {
+  width: 180px;
+  border-right: 3px solid #222;
+  background: #d8d8d8;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+.win95-users-title {
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+.win95-users-list {
+  margin-left: 8px;
+  background: #fff;
+  border: 1px solid #222;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+.win95-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1em;
+}
+.win95-user-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #1bc700;
+  border-radius: 50%;
+  margin-right: 2px;
+  border: 1px solid #222;
+}
+
+.win95-chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px inset #888;
+  margin: 10px;
+  margin-left: 0;
+  position: relative;
+}
+.win95-messages {
+  flex: 1;
+  padding: 18px;
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
+  overflow-y: auto;
+}
+.win95-system-message {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+}
+.win95-chat-message {
+  color: #222;
+  font-style: normal;
+  margin: 4px 0;
+  text-align: left;
+}
+
+.win95-chat-inputbar {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #bdbdbd;
+  background: #e0e0e0;
+  padding: 6px 8px;
+}
+.win95-chat-input {
+  flex: 1;
+  padding: 4px 8px;
+  border: 2px inset #888;
+  font-size: 1em;
+  background: #fff;
+  color: #222;
+  margin-right: 4px;
+}
+.win95-chat-send {
+  border: 2px outset #888;
+  background: #e0e0e0;
+  padding: 2px 16px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.win95-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d8d8d8;
+  border-top: 2px solid #bdbdbd;
+  padding: 2px 8px;
+  font-size: 0.98em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.win95-statusbar-right {
+  position: absolute;
+  right: 100px;
+}
+.win95-statusbar-time {
+  position: absolute;
+  right: 8px;
+}
